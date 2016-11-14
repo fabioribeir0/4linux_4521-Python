@@ -1,0 +1,20 @@
+git status
+
+git clone "url"
+
+git add --all
+git commit -m "Segunda-Feira"
+git push origin master
+
+git config --global user.name "Nome"
+git config --global user.email "Email"
+
+https://github.com/evertonpussi1985/python4linux.git
+https://github.com/fabioribeir0/4linux_course.git
+
+
+
+pipreqs "path"
+pip install -r "path/file.txt"
+
+pip install sqlacodegen
