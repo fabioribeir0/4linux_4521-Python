@@ -10,7 +10,7 @@ git config --global user.name "Nome"
 git config --global user.email "Email"
 
 https://github.com/evertonpussi1985/python4linux.git
-https://github.com/fabioribeir0/4linux_course.git
+https://github.com/fabioribeir0/4linux_4521-Python.git
 
 
 
