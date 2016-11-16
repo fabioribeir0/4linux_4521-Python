@@ -1,0 +1,5 @@
+ssh root@192.168.0.2 "apt-get install -y git python python-setuptools python-dev sqlite3"
+ssh root@192.168.0.2 "git clone https://github.com/AlissonMMenezes/Terminus.git /srv/Terminus"
+ssh root@192.168.0.2 "easy_install pyramid_mailer"
+ssh root@192.168.0.2 "cd /srv/Terminus ; python setup.py install"
+ssh root@192.168.0.2 "cd /srv/Terminus ; nohup pserve development.ini --reload &"
