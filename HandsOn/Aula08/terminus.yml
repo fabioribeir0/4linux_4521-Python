@@ -1,0 +1,9 @@
+name: Terminus
+repo: https://github.com/AlissonMMenezes/Terminus.git
+commands:
+  - apt-get update
+  - apt-get install -y git python python-setuptools python-dev sqlite3
+  - git clone https://github.com/AlissonMMenezes/Terminus.git /srv/Terminus
+  - easy_install pyramid_mailer
+  - bash -c "cd /srv/Terminus ; python setup.py install"
+  - bash -c "cd /srv/Terminus ; pserve --daemon development.ini"
