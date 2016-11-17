@@ -1,0 +1,9 @@
+name: ProjetoDexterOps
+developers:
+  - fabio.ribeiro@dexter.com.br
+  - alisson.machado@dexter.com.br
+  - teste@dexter.com.br
+commands:
+  - apt-get clean
+  - apt-get update
+  - apt-get -f install -y
