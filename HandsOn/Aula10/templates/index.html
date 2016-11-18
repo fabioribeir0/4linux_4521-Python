@@ -17,20 +17,26 @@
                 <table class="table table-striped">
                     <th>Nome</th>
                     <th>IP</th>
+                    <th>Status</th>
                     <th>Acoes</th>
+
+                    {% for c in containers %}
                     <tr>
-                        
-                        <td>Container 1</td><td>172.17.0.2</td>
+                        <td>{{c.Names}}</td>
+                        <td>{{c.NetworkSettings.IPAddress}}</td>
+                        <td>{{c.Status}}</td>
                         <td>
-                        <button type="button" class="btn btn-success btn-xs">Start</button>
-                        <button type="button" class="btn btn-danger btn-xs">Stop</button>
+                            <button id="{{c.Id}}" type="button" class="btn btn-success btn-xs">Start</button>
+                            <button id="{{c.Id}}" type="button" class="btn btn-danger btn-xs">Stop</button>
                         </td>
-                        
-                        
                     </tr>
+                    {% endfor %}
+
                 </table>
             </div>
     </div>
 </div>
 
 <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+<script language="javascript" src="/static/js/jquery.js"></script>
+<script language="javascript" src="/static/js/docker.js"></script>
