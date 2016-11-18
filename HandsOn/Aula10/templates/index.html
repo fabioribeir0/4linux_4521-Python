@@ -23,7 +23,7 @@
                     {% for c in containers %}
                     <tr>
                         <td>{{c.Names}}</td>
-                        <td>{{c.NetworkSettings.IPAddress}}</td>
+                        <td>{{c.NetworkSettings.Networks.bridge.IPAddress}}</td>
                         <td>{{c.Status}}</td>
                         <td>
                             <button id="{{c.Id}}" type="button" class="btn btn-success btn-xs">Start</button>
